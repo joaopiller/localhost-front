@@ -1,0 +1,30 @@
+.wrapper {
+    width: 100%;
+    height: 4.375rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #E8ECF2;
+}
+
+.wrapper > div {
+    display: flex;
+    justify-content: space-between;
+    width: 80rem;
+    height: 2.5rem;
+}
+
+.wrapper > div > nav {
+    display: flex;
+    gap: 1.875rem;
+    align-items: center;
+}
+
+.link {
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: none;
+    color: #000;
+    line-height: 1rem;
+    font-family: var(--archivo);
+}
