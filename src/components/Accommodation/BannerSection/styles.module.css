@@ -13,8 +13,6 @@
 }
 
 .iconBtn {
-    background-color: transparent;
-    border: none;
     cursor: pointer;
     margin-top: .5rem;
     margin-right: .8rem;
@@ -22,5 +20,5 @@
 
 .iconBtn.edit {
     position: relative;
-    left: .8rem;
+    left: .4rem;
 }
