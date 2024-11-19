@@ -17,8 +17,8 @@ export default function Home() {
             <h3>Urban Loft</h3>
             <p>Giorgina Bay, Ontario, California</p>
           </div>
-          <div>
-            <span></span>
+          <div className={styles.price}>
+            <span>$404</span>
             <span>/night</span>
           </div>
         </div>
