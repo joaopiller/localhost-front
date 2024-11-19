@@ -1,32 +1,19 @@
+import BannerSection from "./BannerSection";
 import styles from "./index.module.css";
+import InfoSection from "./InfoSection";
 
 interface AccommodationProps {
-    image: string,
-    title: string,
-    location: string,
-    price: string
+    image: string;
+    title: string;
+    location: string;
+    price: string;
 }
 
 export default function Accommodation({image, title, location, price}: AccommodationProps) {
     return (
         <div className={styles.wrapper}>
-            <div
-                className={styles.bannerSection}
-                style={{
-                    backgroundImage: `url(${image})`,
-                }}
-            >
-            </div>
-            <div className={styles.infoSection}>
-                <div>
-                    <h3>{title}</h3>
-                    <p>{location}</p>
-                </div>
-                <div className={styles.price}>
-                    <span>{price}</span>
-                    <span>/night</span>
-                </div>
-            </div>
+            <BannerSection image={image} />
+            <InfoSection title={title} location={location} price={price} />
         </div>
     )
 }
