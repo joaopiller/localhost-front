@@ -1,0 +1,22 @@
+.wrapper {
+    width: 19.063rem;
+    height: 25.5rem;
+}
+
+.bannerSection {
+    width: 19.063rem;
+    height: 18.75rem;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    border-top-left-radius: 0.625rem;
+    border-top-right-radius: 0.625rem;
+}
+
+.infoSection {
+    background-color: #fff;
+    height: 6.75rem;
+    overflow: hidden;
+    border-bottom-left-radius: 0.625rem;
+    border-bottom-right-radius: 0.625rem;
+}
