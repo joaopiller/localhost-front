@@ -1,4 +1,4 @@
-import styles from "./index.module.css";
+import styles from "./styles.module.css";
 
 interface InfoSectionProps {
     title: string;
@@ -14,7 +14,7 @@ export default function InfoSection({title, location, price}: InfoSectionProps) 
                 <p>{location}</p>
             </div>
             <div className={styles.price}>
-                <span>{price}</span>
+                <span>${price}</span>
                 <span>/night</span>
             </div>
         </div>

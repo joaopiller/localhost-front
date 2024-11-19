@@ -1,4 +1,7 @@
-import styles from "./index.module.css";
+import styles from "./styles.module.css";
+import Image from "next/image";
+import deleteIcon from "../../../assets/delete.svg";
+import edit from "../../../assets/edit.svg";
 
 export default function BannerSection({image}: {image: string}) {
     return (
@@ -8,6 +11,22 @@ export default function BannerSection({image}: {image: string}) {
                 backgroundImage: `url(${image})`,
             }}
         >
+            <button className={`${styles.iconBtn} ${styles.edit}`}>
+                <Image
+                    src={edit}
+                    alt="Edit Icon"
+                    width={25}
+                    height={25}
+                />
+            </button>
+            <button className={styles.iconBtn}>
+                <Image
+                    src={deleteIcon}
+                    alt="Delete Icon"
+                    width={25}
+                    height={25}
+                />
+            </button>
         </div>
     )
 }
