@@ -1,0 +1,14 @@
+.searchSection {
+    height: 16.25rem;
+    background-image: url('../assets/village.png');
+    background-position: center;
+    background-size: cover;
+}
+
+.searchBar {
+    height: 5rem;
+    width: 80rem;
+    border-radius: 0.625rem;
+    border: 1px solid #E8ECF2;
+    background-color: #fff;
+}
