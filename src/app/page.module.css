@@ -1,3 +1,102 @@
 .page {
     background-color: #FAFAFA;
 }
+
+.contactSection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: solid 1px #787878;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.contactTexts {
+    height: 5.625rem;
+    width: 20.625rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contactTexts h2 {
+    font-size: 2.25rem;
+    font-family: var(--archivo);
+    font-weight: 700;
+    color: #00C29F;
+}
+
+.contactTexts p {
+    font-size: 1rem;
+    font-family: var(--archivo);
+    font-weight: 700;
+    color: #787878;
+    line-height: 1.25rem;
+    text-align: center;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 26.313rem;
+    width: 35.625rem;
+    background-color: #00C29F;
+    border-radius: 1rem;
+}
+
+.contactForm h3 {
+    text-align: center;
+    font-weight: 700;
+    font-family: var(--archivo);
+    color: #FFFFFF;
+    font-size: 2rem;
+    margin-top: 1rem;
+}
+
+.textInput {
+    width: 25.875rem;
+    height: 2.125rem;
+    resize: none;
+    color: #fff;
+    background-color: #00C29F;
+    font-family: var(--archivo);
+    border: 3px solid #fff;
+    border-radius: 6px;
+    font-size: 1rem;
+    outline: none;
+    padding-left: .5rem;
+}
+
+.textInput::placeholder {
+    color: #ffffff;
+    font-weight: 700;
+    font-family: var(--archivo);
+    font-size: 1rem;
+}
+
+.contactForm > button {
+    background-color: #FFFFFF;
+    border: none;
+    width: 13.313rem;
+    height: 2.313rem;
+    border-radius: 0.625rem;
+    font-family: var(--archivo);
+    font-size: 1.25rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.contactForm > button:hover {
+    background-color: #f0f0f0;
+}
+
+.inputsSection {
+    height: 15.938rem;
+    width: 27.063rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
