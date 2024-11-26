@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "@/components/Header";
 import { Archivo } from 'next/font/google'
+import { Footer } from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Localhost",
@@ -20,6 +21,7 @@ export default function RootLayout({children,}: Readonly<{children: React.ReactN
       <body>
         <Header/>
         {children}
+        <Footer/>
       </body>
     </html>
   );
