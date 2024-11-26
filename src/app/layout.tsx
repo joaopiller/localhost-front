@@ -3,6 +3,7 @@ import "./globals.css";
 import Header from "@/components/Header";
 import { Archivo } from 'next/font/google'
 import { Footer } from "@/components/Footer";
+import { Input } from "@/components/Input";
 
 export const metadata: Metadata = {
   title: "Localhost",
