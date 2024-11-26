@@ -27,4 +27,20 @@
     color: #000;
     line-height: 1rem;
     font-family: var(--archivo);
+    position: relative;
+}
+
+.link::after {
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #000;
+    bottom: -6px;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.link:hover:after {
+    width: 100%;
 }
