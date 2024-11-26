@@ -1,0 +1,29 @@
+.accommodationsSection {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.accommodations {
+    width: 80rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.showButton {
+    width: 9.375rem;
+    height: 3.125rem;
+    border: 1px solid #00C29F;
+    margin-bottom: 1.5rem;
+    font-family: var(--archivo);
+    text-align: center;
+    font-weight: 600;
+    border-radius: .5rem;
+    cursor: pointer;
+    font-size: 1rem
+}
