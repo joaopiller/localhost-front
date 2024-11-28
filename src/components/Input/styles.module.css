@@ -1,11 +1,22 @@
+.wrapper{
+    display: flex;
+    align-items: center;
+    border: 1px solid black;
+    margin: .5rem;
+    padding: .5rem;
+    justify-content: space-between;
+}
+
 .label {
     display: 'block';
     margin: '0.5rem';
 }
 
 .input{
-    padding: '0.5rem';
-    border: '1px solid #ccc';
-    border-radius: '4px';
-    width: '100%';
+    border: none;
+    width: 100%;
+}
+
+.input:focus{
+    outline: none;
 }
