@@ -2,7 +2,6 @@
 import { useState } from 'react';
 import styles from './styles.module.css';
 import Image, { StaticImageData } from 'next/image';
-import house from '../../assets/house.svg';
 
 interface PropTypes{
     label?: string;
@@ -10,9 +9,10 @@ interface PropTypes{
     placeholder: string;
     onValueChange?: (value: string) => void;
     icon?: StaticImageData;
+    size?: string
 }
 
-export function Input({label, type = "text", placeholder, onValueChange, icon}: PropTypes){
+export function Input({label, type = "text", placeholder, onValueChange, icon, size}: PropTypes){
 
     const [value, setValue] = useState('');
 
@@ -24,7 +24,7 @@ export function Input({label, type = "text", placeholder, onValueChange, icon}: 
     };
 
     return(
-        <div className={styles.wrapper}>
+        <div className={styles.wrapper} style={{width: size}}>
             {label && <label className={styles.label}>{label}</label>}
             <input
                 type={type}

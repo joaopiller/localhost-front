@@ -5,6 +5,7 @@ import { Archivo } from 'next/font/google'
 import { Footer } from "@/components/Footer";
 import { Input } from "@/components/Input";
 import house from '../assets/house.svg';
+import { Feedback } from "@/components/Feedback";
 
 export const metadata: Metadata = {
   title: "Localhost",
@@ -23,7 +24,6 @@ export default function RootLayout({children,}: Readonly<{children: React.ReactN
       <body>
         <Header/>
         {children}
-        <Input placeholder="Escreva algo aqui" icon={house}/>
         <Footer/>
       </body>
     </html>
