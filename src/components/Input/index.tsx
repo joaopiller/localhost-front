@@ -9,10 +9,11 @@ interface PropTypes{
     placeholder: string;
     onValueChange?: (value: string) => void;
     icon?: StaticImageData;
-    size?: string
+    width?: string;
+    height?: string;
 }
 
-export function Input({label, type = "text", placeholder, onValueChange, icon, size}: PropTypes){
+export function Input({label, type = "text", placeholder, onValueChange, icon, width, height}: PropTypes){
 
     const [value, setValue] = useState('');
 
@@ -24,7 +25,7 @@ export function Input({label, type = "text", placeholder, onValueChange, icon, s
     };
 
     return(
-        <div className={styles.wrapper} style={{width: size}}>
+        <div className={styles.wrapper} style={{width: width, height: height}}>
             {label && <label className={styles.label}>{label}</label>}
             <input
                 type={type}
